@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/lunja/Arduino/libraries/**",
+                "/home/lunja/.arduino15/packages/esp32/**"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ESP32"
+            ],
+            "compilerPath": "/home/lunja/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.12/include/hal/include/hal/spi_types.h",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

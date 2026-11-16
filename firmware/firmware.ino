@@ -1,18 +1,4 @@
-/*
-  ETH01-EVO (ESP32-C3 + DM9051) meteostanica
-    - SCD41 (CO2, temp, vlaga)  + LCD 16x2 (I2C) na istoj magistrali
-    - senzor nivoa vode (ADC)
-    - Ethernet + MQTT (bez TLS-a) na lokalni Mosquitto broker
-
-  Potrebno: Arduino-ESP32 core 3.x, biblioteka PubSubClient,
-            SparkFun SCD4x, hd44780 (iste kao do sada).
-
-  Pinovi DM9051 (zauzeti, ne koristiti): IO3, IO6, IO7, IO8, IO9, IO10
-  Tvoji pinovi (slobodni): IO0 (ADC vode), IO1 (SDA), IO2 (SCL), IO18 (napajanje senzora vode)
-
-  Komanda na topic meteo/<ID>/cmd:  INTERVAL:60  (interval slanja u sekundama, 5..3600)
-*/
-
+#include "secrets.h"
 #include <Wire.h>
 #include <SPI.h>
 #include <ETH.h>
